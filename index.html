@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sotien = prompt('Nhập số tiền gửi vào');
+        let laisuat = prompt('Nhập lãi suất ');
+        let sonam = prompt('Nhập số năm gửi');
+        sotien = parseInt(sotien);
+        laisuat = parseFloat(laisuat);
+        sonam = parseInt(sonam);
+        let tienlai = sotien*(laisuat/100);
+        let tongsotien = sotien + (sonam*tienlai);
+        document.write("Tổng số tiền sau " + sonam + " năm là: " + tongsotien + " VNĐ")
+    </script>
+</body>
+</html>
